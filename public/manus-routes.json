@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "NEPS | Youth wellbeing. Shared futures."
+    },
+    {
+      "path": "/about/",
+      "title": "About NEPS | NEPS"
+    },
+    {
+      "path": "/contact/",
+      "title": "Contact | NEPS"
+    },
+    {
+      "path": "/countries/",
+      "title": "Country implementation | NEPS"
+    },
+    {
+      "path": "/creative-art-therapy/",
+      "title": "Creative Art Therapy · WP6 | NEPS"
+    },
+    {
+      "path": "/data-ethics-safeguarding/",
+      "title": "Data, ethics & safeguarding | NEPS"
+    },
+    {
+      "path": "/governance/",
+      "title": "Governance & consortium | NEPS"
+    },
+    {
+      "path": "/news/",
+      "title": "News & updates | NEPS"
+    },
+    {
+      "path": "/news/enumerators-field-data-collection/",
+      "title": "NEPS Project Team Equips Enumerators for Field Data Collection | NEPS"
+    },
+    {
+      "path": "/news/sfa-knust-site-visit/",
+      "title": "SFA Delegation, NEPS Research Team Engage College Of Health Sciences On Ghana Site Visit | NEPS"
+    },
+    {
+      "path": "/news/usted-knust-sfa-review/",
+      "title": "USTED, KNUST Host SFA Foundation Team For NEPS Youth Mental Health Project Review | NEPS"
+    },
+    {
+      "path": "/policy-and-advocacy/",
+      "title": "Policy & advocacy | NEPS"
+    },
+    {
+      "path": "/publications/",
+      "title": "Publications & outputs | NEPS"
+    },
+    {
+      "path": "/research-framework/",
+      "title": "Research framework | NEPS"
+    },
+    {
+      "path": "/resources/",
+      "title": "Resources | NEPS"
+    },
+    {
+      "path": "/team/",
+      "title": "The NEPS team | NEPS"
+    },
+    {
+      "path": "/work-packages/",
+      "title": "Work packages | NEPS"
+    },
+    {
+      "path": "/youth-mental-health-manual/",
+      "title": "Youth Mental Health Manual | NEPS"
+    }
+  ]
+}
