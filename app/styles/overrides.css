@@ -1,0 +1,143 @@
+/*
+ * Add small site-specific design changes here. The original exported stylesheet
+ * and its existing system-font stack are preserved in source-site.css.
+ */
+
+/* Keep the source site's keyboard skip link visibly available on focus. */
+.skip-link:focus {
+  z-index: 1000;
+}
+
+/* Make form status and native filter controls inherit the original text color. */
+.contact-form [role="status"] {
+  margin-top: 0.75rem;
+  color: var(--neps-deep-teal, #14564f);
+}
+
+.filters select {
+  color: inherit;
+}
+
+/* Image-led cards surface company-provided stories on the homepage and news index. */
+.news-grid {
+  align-items: stretch;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+
+.news-card__media {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: var(--neps-muted);
+}
+
+.news-card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.news-card:hover .news-card__media img {
+  transform: scale(1.025);
+}
+
+.news-card__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 22px;
+  border-top: 2px solid var(--neps-deep-teal);
+}
+
+.news-card__content > .eyebrow {
+  margin: 0 0 8px;
+}
+
+.news-card__content > .meta {
+  margin: 0 0 10px;
+}
+
+.news-card__content h2,
+.news-card__content h3 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.news-card__content h2 a,
+.news-card__content h3 a {
+  text-decoration: none;
+}
+
+.news-card__content h2 a:hover,
+.news-card__content h3 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.news-card__content > p:not(.eyebrow, .meta) {
+  margin: 0 0 20px;
+}
+
+.news-card__content > .text-link {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* Long-form article imagery remains within the readable article column. */
+.article-body > .article-figure {
+  margin: 0 0 35px;
+}
+
+.article-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.article-figure--feature img {
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.article-figure figcaption {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.article-body blockquote {
+  margin: 0 0 25px;
+  padding: 2px 0 2px 22px;
+  border-left: 3px solid var(--neps-teal);
+  font-style: italic;
+}
+
+.article-body blockquote p {
+  margin-bottom: 0;
+}
+
+.news-article .meta {
+  margin-top: 18px;
+}
+
+@media (max-width: 700px) {
+  .news-card__content {
+    padding: 18px;
+  }
+
+  .article-figure--feature img {
+    max-height: 360px;
+  }
+}
